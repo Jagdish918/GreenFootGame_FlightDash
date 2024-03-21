@@ -5,14 +5,11 @@ public class Bird extends Actor
 {
     private WorldClass w;
     
-    private int moveY = 5;  //Simulates gravity by specifying the amount that the bird will move down each time
-                            //When the bird jumps, the moveY variable is set to a negative value and the bird moves up
-                            //To reset to initial state, moveY is increased by 1 kn each act until it is equal to 5
+    private int moveY = 5;  
                             
-    private int imageNumber = 1; //Used for animating the bird's wings
+    private int imageNumber = 1; 
 
-    private GreenfootImage img1; //The initial image that is sequentially displayed for animation effect
-
+    private GreenfootImage img1; 
         public Bird()
     {
         img1 = new GreenfootImage(getImage()); 
@@ -42,9 +39,8 @@ public class Bird extends Actor
         }
     }   
 
-    /**
-     * To animate the bird's wings.
-     */
+    
+
     private void animate()
     {
         if(Greenfoot.getRandomNumber(3) == 0)
@@ -60,9 +56,7 @@ public class Bird extends Actor
         }
     }    
 
-    /**
-     * Flap up either on mouse click or keyboard input.
-     */
+    
     private void flapUp()
     {
         final int jumpDist = -18;
@@ -73,7 +67,7 @@ public class Bird extends Actor
 
         else if(Greenfoot.isKeyDown("space")||Greenfoot.isKeyDown("up"))
         {
-            moveY = jumpDist/2; //Control optimized for keyboard input
+            moveY = jumpDist/2; 
         }
         if(moveY != 5) 
         {

@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=Boundary
-comment0.text=\r\n\ This\ is\ an\ invisible\ line\ between\ two\ pipes.\ When\ the\ bee\ touches\ it,\ it\ knows\ to\ tell\ the\ world\ to\ add\ a\ point.\r\n\ \r\n\ @author\ Achyudh,\ Shantanu\r\n\ @version\ 14/08/2015\r\n
 comment1.params=location
 comment1.target=Boundary(int)
 comment2.params=

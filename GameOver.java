@@ -1,12 +1,7 @@
 import greenfoot.*;
 
 
-/**
- * This is the Game Over screen displayed when the uses loses the game. 
- * 
- * @author Achyudh, Shantanu
- * @version 14/08/2015
- */
+
 public class GameOver extends Actor
 {        
     public GameOver(int score)
@@ -23,9 +18,6 @@ public class GameOver extends Actor
     }
 
     
-    /**
-     * Resets the world upon pressing Enter to start a new game.
-     */
     public void act() 
     {
         if(Greenfoot.isKeyDown("enter"))

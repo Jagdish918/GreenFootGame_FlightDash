@@ -1,11 +1,6 @@
 import greenfoot.*;  
 
-/**
- * This is an invisible line between two pipes. When the bee touches it, it knows to tell the world to add a point.
- * 
- * @author Achyudh, Shantanu
- * @version 14/08/2015
- */
+
 public class Boundary extends Actor
 {
     private GreenfootImage imgBoundary;
