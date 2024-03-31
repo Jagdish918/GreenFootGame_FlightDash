@@ -4,11 +4,11 @@ import greenfoot.*;
 public class Boundary extends Actor
 {
     private GreenfootImage imgBoundary;
-    private boolean isPipeInitialized = false; //Checks if pipe has been initialized in the world
+    private boolean isPipeInitialized = false; 
     private int pos;
     public Boundary(int location)
     {
-        imgBoundary = new GreenfootImage(1, 180); //The image for the line. This stays transparent.     
+        imgBoundary = new GreenfootImage(1, 180);    
         pos = location;
         setImage(imgBoundary);
     }

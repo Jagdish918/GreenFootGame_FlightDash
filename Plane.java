@@ -1,7 +1,7 @@
 import greenfoot.*;  
 
 
-public class Bird extends Actor
+public class Plane extends Actor
 {
     private WorldClass w;
     
@@ -10,7 +10,7 @@ public class Bird extends Actor
     private int imageNumber = 1; 
 
     private GreenfootImage img1; 
-        public Bird()
+        public Plane()
     {
         img1 = new GreenfootImage(getImage()); 
         setImage(img1);

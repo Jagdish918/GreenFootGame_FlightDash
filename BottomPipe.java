@@ -5,9 +5,9 @@ public class BottomPipe extends Actor
 {
     private GreenfootImage imgBottom;
     
-    private int pos; //The midpoint of the gap in the pipes
+    private int pos; 
            
-    private boolean isInitialized = false; //Checks if the pipe has been initialized on the screen.
+    private boolean isInitialized = false; 
   
     public BottomPipe(int location)
     {
@@ -15,10 +15,7 @@ public class BottomPipe extends Actor
         pos = location;
     }
     
-    /**
-     * Checks if the pipe has been initialized. If not, then sets the pipe's location.
-     * Moves the pipe to the left across the screen and remove it just when it exits the world. 
-     */
+   
     public void act() 
     {
         if(!isInitialized)

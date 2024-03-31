@@ -16,10 +16,10 @@ public class WorldClass extends World
     public WorldClass()
     {
         super(500, 600, 1);
-        addObject(new Bird(), 200, 300);
+        addObject(new Plane(), 200, 300);
         addObject(score, 50, 50); 
 
-        setPaintOrder(GameOver.class, Bird.class, ScoreDisplay.class, TopPipe.class, BottomPipe.class, Boundary.class);
+        setPaintOrder(GameOver.class, Plane.class, ScoreDisplay.class, TopPipe.class, BottomPipe.class, Boundary.class);
         GreenfootImage background = new GreenfootImage(500, 600);
         scrollingImage = getScrollingImage(500, 600);
         background.drawImage(scrollingImage, 0, 0);
@@ -27,9 +27,7 @@ public class WorldClass extends World
         prepare();
     }
 
-    /**
-     * Scroll the world a little and check if it is time to add a new pipe
-     */
+    
     public void act()
     {
         if(!isLost)
@@ -51,9 +49,7 @@ public class WorldClass extends World
         }
     }
 
-    /**
-     * Create a new pipe when required at given intervals and locations, along with a Boundary object.
-     */
+    
     private void newPipe()
     {
         int newPipe = lastPipe + Greenfoot.getRandomNumber(300) - 100;
@@ -73,9 +69,7 @@ public class WorldClass extends World
         score.add(1);
     }
 
-    /**
-     * Stop the game and show the GameOver Screen
-     */
+    
     public void lost()
     {
         removeObjects(getObjects(null));
@@ -83,9 +77,7 @@ public class WorldClass extends World
         addObject(new GameOver(score.integerScore), 250, 300);
     }
 
-    /**
-     * To show a scrolling background at given position and make it fill the screen.
-     */
+    
     private void paint(int position)
     {
         GreenfootImage bg = getBackground();
@@ -105,10 +97,7 @@ public class WorldClass extends World
         return image;
     } 
     
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
+    
     private void prepare()
     {
     }
