@@ -59,7 +59,7 @@ public class Plane extends Actor
     
     private void flapUp()
     {
-        final int jumpDist = -18;
+        final int jumpDist = -15;
         if(Greenfoot.mouseClicked(null))
         {
             moveY = jumpDist;                       

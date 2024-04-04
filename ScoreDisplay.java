@@ -29,7 +29,7 @@ public class ScoreDisplay extends Actor
     private void updateScore()
     {
 
-        GreenfootImage text = new GreenfootImage(""+integerScore, 60, Color.WHITE, new Color(0, 0, 0, 0));
+        GreenfootImage text = new GreenfootImage("        Score:"+integerScore, 60, Color.WHITE, new Color(0, 0, 0, 0));
         
         setImage(text);
     }
